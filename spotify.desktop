@@ -1,0 +1,16 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+#X-MultipleArgs=false
+Name=Spotify
+Exec=/snap/chromium/current/usr/lib/chromium-browser/chrome --enable-features=UseOzonePlatform --ozone-platform=wayland --user-data-dir=/home/domenico/.config/chromium-spotify --profile-directory=Default --class=open.spotify.com --app=https://open.spotify.com/
+# The icon can be found inside $HOME$/.icons
+Icon=spotify
+# This value must be the same of the value of --class in the Exec line
+StartupWMClass=open.spotify.com
+X-GNOME-Settings-Panel=/snap/chromium/current/usr/lib/chromium-browser/chrome --enable-features=UseOzonePlatform --ozone-platform=wayland --user-data-dir=/home/domenico/.config/chromium-spotify --profile-directory=Default --class=open.spotify.com --app=https://open.spotify.com
+StartupNotify=true
+
+# in order to work, spotify needs an important step. You must copy the directory ~/.config/chromium/WidevineCdm into ~/.config/chromium-spotify (or whatever is the path you used as user-data-dir) 

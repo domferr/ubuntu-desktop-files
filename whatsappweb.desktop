@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+#X-MultipleArgs=false
+Name=WhatsApp
+Exec=/snap/chromium/current/usr/lib/chromium-browser/chrome --enable-features=UseOzonePlatform --ozone-platform=wayland --user-data-dir=/home/domenico/.config/chromium-whatsapp --profile-directory=Default --class=web.whatsapp.com --app=https://web.whatsapp.com
+# The icon can be found inside $HOME$/.icons
+Icon=web-whatsapp
+# This value must be the same of the value of --class in the Exec line
+StartupWMClass=web.whatsapp.com
+X-GNOME-Settings-Panel=/snap/chromium/current/usr/lib/chromium-browser/chrome --enable-features=UseOzonePlatform --ozone-platform=wayland --user-data-dir=/home/domenico/.config/chromium-whatsapp --profile-directory=Default --class=web.whatsapp.com --app-id=hnpfjngllnobngcgfapefoaidbinmjnm
+StartupNotify=true
